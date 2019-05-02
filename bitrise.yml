@@ -18,8 +18,7 @@ workflows:
         inputs:
         - content: |
             #!/bin/bash
-            echo "Just an example 'secrets' print."
-            echo "The value of 'A_SECRET_PARAM' is: $A_SECRET_PARAM"
+            stepman audit --step-yml ./step.yml
     - path::./:
         title: Step Test
         description: |-
