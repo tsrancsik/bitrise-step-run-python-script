@@ -21,7 +21,7 @@ workflows:
             echo "Just an example 'secrets' print."
             echo "The value of 'A_SECRET_PARAM' is: $A_SECRET_PARAM"
     - change-workdir:
-        title: Switch working dir to test / _tmp dir
+        title: Switch working dir to test / _python_app dir
         description: |-
           To prevent step testing issues, like referencing relative
           files with just './some-file' in the step's code, which would
@@ -29,7 +29,7 @@ workflows:
           but would break if the step is included in another `bitrise.yml`.
         run_if: true
         inputs:
-        - path: ./_tmp
+        - path: ./_python_app
         - is_create_path: true
     - path::./:
         title: Step Test
@@ -40,7 +40,7 @@ workflows:
           file if you would not specify another value.
         run_if: true
         inputs:
-        - example_step_input: Example Step Input's value
+        - python_application: hello.py
     - script:
         inputs:
         - content: |
