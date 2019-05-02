@@ -73,6 +73,43 @@ inputs:
       is_expand: true
       is_required: true
       value_options: []
+  - db_host:
+    opts:
+      title: "DB host URL"
+      description: |
+        DB host URL
+      is_required: false
+  - db_port:
+    opts:
+      title: "DB port"
+      description: |
+        DB port
+      is_required: false
+  - db_username:
+    opts:
+      title: "DB username"
+      description: |
+        DB username
+      is_required: false
+  - db_password:
+    opts:
+      title: "DB password"
+      description: |
+        DB password
+      is_required: false
+      is_sensitive: true
+  - db_name:
+    opts:
+      title: "DB name"
+      description: |
+        DB name
+      is_required: false
+  - db_sslmode:
+    opts:
+      title: "DB sslmode"
+      description: |
+        DB sslmode
+      is_required: false
 
 outputs:
   - EXAMPLE_STEP_OUTPUT:
