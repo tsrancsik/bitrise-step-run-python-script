@@ -40,7 +40,7 @@ workflows:
           file if you would not specify another value.
         run_if: true
         inputs:
-        - python_application: hello.py
+        - python_application: read_data.py
 
 
   # ----------------------------------------------------------------
