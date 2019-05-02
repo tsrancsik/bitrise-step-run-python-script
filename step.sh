@@ -1,8 +1,8 @@
 #!/bin/bash
-for filename in /scripts/*.py; do
-    [ -e "$filename" ] || continue
-    python "$filename"
-done
+set -ex
+
+echo "Running python app: ${python_application}"
+python ${python_application}
 
 #
 # --- Export Environment Variables for other Steps:

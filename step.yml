@@ -8,11 +8,11 @@
 # - Bitrise CLI guides: http://devcenter.bitrise.io/bitrise-cli/
 
 title: |-
-  Run Python Script
+  Run Python App
 summary: |
-  Step to run custom python script.
+  Step to run custom python application.
 description: |
-  Step to run custom python script. Python version 3 is supported.
+  Step to run custom python application. Python version 3 is supported.
 website: https://github.com/SrancsikAtBitrise/bitrise-step-run-python-script
 source_code_url: https://github.com/SrancsikAtBitrise/bitrise-step-run-python-script
 support_url: https://github.com/SrancsikAtBitrise/bitrise-step-run-python-script/issues
@@ -64,14 +64,12 @@ toolkit:
 
 
 inputs:
-  - example_step_input: Default Value - you can leave this empty if you want to
+  - python_application: 
     opts:
-      title: "Example Step Input"
-      summary: Summary. No more than 2-3 sentences.
+      title: "Python Application"
+      summary: The py file you would like to run.
       description: |
-        Description of this input.
-
-        Can be Markdown formatted text.
+        Name the path and py file you would like to run.
       is_expand: true
       is_required: true
       value_options: []
